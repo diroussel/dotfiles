@@ -1,0 +1,169 @@
+tap "adoptopenjdk/openjdk"
+tap "cjbassi/gotop"
+tap "getantibody/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "mongodb/brew"
+cask "adoptopenjdk8"
+# Search tool like grep, but optimized for programmers
+brew "ack"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Java build tool
+brew "ant"
+# Engine for large-scale data processing
+brew "apache-spark"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Statistics utility to count lines of code
+brew "cloc"
+# Tool for service discovery, monitoring and configuration
+brew "consul"
+# Configurable talking characters in ASCII art
+brew "cowsay"
+# Compiler for writing C extensions for the Python language
+brew "cython"
+# Go dependency management tool
+brew "dep"
+# Tool for exploring each layer in a docker image
+brew "dive"
+# Create Docker hosts locally and on cloud providers
+brew "docker-machine", link: false
+# ISO AAC audio encoder
+brew "faac"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Foreman in Go for Procfile-based application management
+brew "forego"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
+# The official GitLab CI runner written in Go
+brew "gitlab-runner"
+# GNU typing tutor
+brew "gnu-typist"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Java-based scripting language
+brew "groovy"
+# Hadoop database: a distributed, scalable, big data store
+brew "hbase"
+# HTTP load generator, ApacheBench (ab) replacement
+brew "hey"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Static analyzer for Java, C, C++, and Objective-C
+brew "infer"
+# Manage your Java environment
+brew "jenv"
+# Load testing and performance measurement application
+brew "jmeter"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Rainbows and unicorns in your console!
+brew "lolcat"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Java-based project management
+brew "maven"
+# Show markdown documents on text terminals
+brew "mdcat"
+# Modern and intuitive terminal-based text editor
+brew "micro"
+# Modern JVM-based framework for building modular microservices
+brew "micronaut"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
+# DNS benchmark utility
+brew "namebench"
+# NCurses Disk Usage
+brew "ncdu"
+# Fast, highly customisable system info script
+brew "neofetch"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# CLI for Postgres with auto-completion and syntax highlighting
+brew "pgcli"
+# Object-relational database system
+brew "postgresql"
+# Python version management
+brew "pyenv"
+# File browser
+brew "ranger"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Safe, concurrent, practical language
+brew "rust"
+# Proxy server that works as a poor man's VPN
+brew "sshuttle"
+# The cross-shell prompt for astronauts
+brew "starship"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Code-search similar to ack
+brew "the_silver_searcher"
+# Text interface for Git repositories
+brew "tig"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Watch files and take action when they change
+brew "watchman"
+# Internet file retriever
+brew "wget"
+# HTTP benchmarking tool
+brew "wrk"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Additional completion definitions for zsh
+brew "zsh-completions"
+# A terminal based graphical activity monitor inspired by gtop and vtop
+brew "cjbassi/gotop/gotop"
+# The fastest shell plugin manager
+brew "getantibody/tap/antibody"
+cask "adoptopenjdk"
+cask "adoptopenjdk11"
+cask "cakebrew"
+cask "edex-ui"
+cask "font-fantasque-sans-mono"
+cask "font-firacode-nerd-font"
+cask "font-hack-nerd-font"
+cask "font-hurmit-nerd-font"
+cask "font-ibm-plex"
+cask "font-iosevka-nerd-font"
+cask "font-monofur-nerd-font"
+cask "font-pt-mono"
+cask "font-victor-mono"
+cask "vagrant"
