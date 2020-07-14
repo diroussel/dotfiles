@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dave/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -108,17 +108,17 @@ alias l="ls -FG"
 alias la="ls -AFG"
 alias ll="ls -AFGlo"
 alias coala="docker run -ti -v $(pwd):/app --workdir=/app coala/base coala"
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+#export JAVA_HOME=`/usr/libexec/java_home -v 11`
 alias java_home=/usr/libexec/java_home
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
 grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 
 
-export PATH=$PATH:/Users/dave/bin
+export PATH=$PATH:$HOME/bin
 export PATH="/usr/local/sbin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /Users/dave/bin/vault vault
+complete -o nospace -C $HOME/bin/vault vault
   
 export ASDF_DIR=/usr/local/opt/asdf
 source /usr/local/opt/asdf/asdf.sh
