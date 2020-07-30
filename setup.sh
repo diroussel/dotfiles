@@ -18,3 +18,6 @@ ln -s .dotfiles/.zshrc .zshrc
 # Add ASDF plugins
 for plugin in `echo helm java k3d kind nodejs ruby terraform yarn`; do asdf plugin add $plugin; done
 
+# starship cofig
+cp ~/.dotfiles/starship.toml ~/.config/starship.toml
+
