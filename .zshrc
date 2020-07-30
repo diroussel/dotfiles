@@ -122,7 +122,7 @@ complete -o nospace -C $HOME/bin/vault vault
   
 export ASDF_DIR=/usr/local/opt/asdf
 source /usr/local/opt/asdf/asdf.sh
-source ~/.asdf/plugins/java/set-java-home.zsh
+#source ~/.asdf/plugins/java/set-java-home.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"

@@ -15,6 +15,7 @@ git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/local/start/light
 ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.bashrc .bashrc
+ln -s .dotfiles/.bash_profile .bash_profile
 
 # Add ASDF plugins
 for plugin in `echo helm java k3d kind nodejs ruby terraform yarn`; do asdf plugin add $plugin; done

@@ -11,9 +11,6 @@ grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/local/sbin:$PATH"
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C $HOME/bin/vault vault
-
 export ASDF_DIR=/usr/local/opt/asdf
 source /usr/local/opt/asdf/asdf.sh
 #source ~/.asdf/plugins/java/set-java-home.bash
