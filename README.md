@@ -1,6 +1,6 @@
 # dotfiles
 
-Basic setup of zsh with oh0my-zsh, starship and asdf
+Basic setup of zsh with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), (starship)[starship.rs/] and (asdf)[https://asdf-vm.com/]
 
 To use:
 ```
