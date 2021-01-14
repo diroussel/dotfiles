@@ -111,8 +111,9 @@ alias coala="docker run -ti -v $(pwd):/app --workdir=/app coala/base coala"
 #export JAVA_HOME=`/usr/libexec/java_home -v 11`
 alias java_home=/usr/libexec/java_home
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
-grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
-
+alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias y='yarn'
+alias l='lsd -la'
 
 export PATH=$PATH:$HOME/bin
 export PATH="/usr/local/sbin:$PATH"
@@ -127,3 +128,5 @@ source /usr/local/opt/asdf/asdf.sh
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
