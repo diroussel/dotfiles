@@ -67,6 +67,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  asdf
   git
   docker
   dotenv
@@ -75,6 +76,7 @@ plugins=(
   osx
   mvn
   rake
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,7 +114,6 @@ alias coala="docker run -ti -v $(pwd):/app --workdir=/app coala/base coala"
 alias java_home=/usr/libexec/java_home
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
-alias y='yarn'
 alias l='lsd -la'
 
 export PATH=$PATH:$HOME/bin
@@ -120,10 +121,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C $HOME/bin/vault vault
-  
-export ASDF_DIR=/usr/local/opt/asdf
-source /usr/local/opt/asdf/asdf.sh
-#source ~/.asdf/plugins/java/set-java-home.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
