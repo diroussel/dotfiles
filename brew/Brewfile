@@ -5,8 +5,9 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/services"
 tap "mongodb/brew"
-cask "adoptopenjdk8"
+tap "peak/s5cmd", "https://github.com/peak/s5cmd"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Automate deployment, configuration, and upgrading
@@ -25,6 +26,10 @@ brew "awscli"
 brew "azure-cli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Statistics utility to count lines of code
 brew "cloc"
 # Tool for service discovery, monitoring and configuration
@@ -45,11 +50,15 @@ brew "faac"
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Extremely Fast Compression algorithm
+brew "lz4"
 # Foreman in Go for Procfile-based application management
 brew "forego"
 # Infamous electronic fortune-cookie generator
 brew "fortune"
-# The official GitLab CI runner written in Go
+# Search through your filesystem with SQL-esque queries
+brew "fsql"
+# Official GitLab CI runner
 brew "gitlab-runner"
 # GNU typing tutor
 brew "gnu-typist"
@@ -57,32 +66,28 @@ brew "gnu-typist"
 brew "gnupg"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Java-based scripting language
 brew "groovy"
-# Hadoop database: a distributed, scalable, big data store
-brew "hbase"
 # HTTP load generator, ApacheBench (ab) replacement
 brew "hey"
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Command-line benchmarking tool
+brew "hyperfine"
 # Static analyzer for Java, C, C++, and Objective-C
 brew "infer"
-# Manage your Java environment
-brew "jenv"
-# Load testing and performance measurement application
-brew "jmeter"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Run local Kubernetes cluster in Docker
 brew "kind"
-# Library to render SVG files using Cairo
-brew "librsvg"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Rainbows and unicorns in your console!
@@ -106,7 +111,7 @@ brew "ncdu"
 # Fast, highly customisable system info script
 brew "neofetch"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
+brew "nginx", restart_service: true
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # CLI for Postgres with auto-completion and syntax highlighting
@@ -121,14 +126,10 @@ brew "ranger"
 brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
-# Safe, concurrent, practical language
-brew "rust"
 # Proxy server that works as a poor man's VPN
 brew "sshuttle"
-# The cross-shell prompt for astronauts
+# Cross-shell prompt for astronauts
 brew "starship"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Text interface for Git repositories
@@ -149,13 +150,25 @@ brew "youtube-dl"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # A terminal based graphical activity monitor inspired by gtop and vtop
 brew "cjbassi/gotop/gotop"
 # The fastest shell plugin manager
 brew "getantibody/tap/antibody"
+# Parallel S3 and local filesystem execution tool
+brew "peak/s5cmd/s5cmd"
+# JDK from the Java User Group (JUG)
 cask "adoptopenjdk"
+# AdoptOpenJDK OpenJDK (Java) Development Kit
 cask "adoptopenjdk11"
+# AdoptOpenJDK OpenJDK (Java) Development Kit
+cask "adoptopenjdk8"
+# Enable Windows-like alt-tab
+cask "alt-tab"
+# GUI app for Homebrew
 cask "cakebrew"
+# Sci-fi themed terminal emulator and system monitor
 cask "edex-ui"
 cask "font-fantasque-sans-mono"
 cask "font-firacode-nerd-font"
@@ -166,4 +179,5 @@ cask "font-iosevka-nerd-font"
 cask "font-monofur-nerd-font"
 cask "font-pt-mono"
 cask "font-victor-mono"
+# Development environment
 cask "vagrant"
