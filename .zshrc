@@ -68,14 +68,15 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   asdf
-  git
   docker
   dotenv
+  git
   gradle
   httpie
-  osx
+  macos
   mvn
   rake
+  rust
   yarn
 )
 
@@ -116,11 +117,15 @@ alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l='lsd -la'
 
-export PATH=$PATH:$HOME/bin
+export PATH="$PATH:$HOME/bin"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C $HOME/bin/vault vault
+
+# Syntax highlighting as commands are entered
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
