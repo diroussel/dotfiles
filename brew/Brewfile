@@ -1,13 +1,11 @@
 tap "adoptopenjdk/openjdk"
 tap "cjbassi/gotop"
-tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
-tap "peak/s5cmd", "https://github.com/peak/s5cmd"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Automate deployment, configuration, and upgrading
@@ -38,20 +36,18 @@ brew "consul"
 brew "cowsay"
 # Compiler for writing C extensions for the Python language
 brew "cython"
-# Go dependency management tool
-brew "dep"
 # Tool for exploring each layer in a docker image
 brew "dive"
-# Create Docker hosts locally and on cloud providers
-brew "docker-machine", link: false
+# Command-line tool to interact with exercism.io
+brew "exercism"
 # ISO AAC audio encoder
 brew "faac"
+# Extremely Fast Compression algorithm
+brew "lz4"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-# Extremely Fast Compression algorithm
-brew "lz4"
 # Foreman in Go for Procfile-based application management
 brew "forego"
 # Infamous electronic fortune-cookie generator
@@ -74,6 +70,8 @@ brew "graphviz"
 brew "grep"
 # Java-based scripting language
 brew "groovy"
+# Hadoop database: a distributed, scalable, big data store
+brew "hbase"
 # HTTP load generator, ApacheBench (ab) replacement
 brew "hey"
 # Improved top (interactive process viewer)
@@ -84,8 +82,16 @@ brew "httpie"
 brew "hyperfine"
 # Static analyzer for Java, C, C++, and Objective-C
 brew "infer"
+# Manage your Java environment
+brew "jenv"
+# Load testing and performance measurement application
+brew "jmeter"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Fast, Dynamic Programming Language
+brew "julia"
 # Run local Kubernetes cluster in Docker
 brew "kind"
 # Curses-based tool for viewing and analyzing log files
@@ -112,8 +118,6 @@ brew "ncdu"
 brew "neofetch"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx", restart_service: true
-# 7-Zip (high compression file archiver) implementation
-brew "p7zip"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 # Object-relational database system
@@ -154,10 +158,6 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 # A terminal based graphical activity monitor inspired by gtop and vtop
 brew "cjbassi/gotop/gotop"
-# The fastest shell plugin manager
-brew "getantibody/tap/antibody"
-# Parallel S3 and local filesystem execution tool
-brew "peak/s5cmd/s5cmd"
 # JDK from the Java User Group (JUG)
 cask "adoptopenjdk"
 # AdoptOpenJDK OpenJDK (Java) Development Kit
