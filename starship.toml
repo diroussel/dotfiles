@@ -72,6 +72,9 @@ disabled = true
 [elixir] 
 disabled = true
 
+[git_status]
+disabled = true
+
 [java]
 style = "red"
 
