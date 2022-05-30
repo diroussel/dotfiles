@@ -15,6 +15,7 @@ git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/local/start/light
 
 # Setup links
 
+cd
 ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.bashrc .bashrc

@@ -117,6 +117,7 @@ alias java_home=/usr/libexec/java_home
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l='lsd -la'
+alias mfa='source ~/bin/aws_helper.sh'
 
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/local/sbin:$PATH"
@@ -130,6 +131,5 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
-
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

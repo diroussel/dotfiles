@@ -87,5 +87,8 @@ disabled = false
 [nim]
 disabled = true
 
+[env_var]
+variable = MFA_PROMPT_INFO
+default = "[no mfa session]"
 
 
