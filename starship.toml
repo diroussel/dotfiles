@@ -52,9 +52,6 @@ $status\
 $character"""
 
 
-[character]
-use_symbol_for_status = true 
-
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
@@ -88,7 +85,7 @@ disabled = false
 disabled = true
 
 [env_var]
-variable = MFA_PROMPT_INFO
-default = "[no mfa session]"
+variable = "MFA_PROMPT_INFO"
+default = ""
 
 
