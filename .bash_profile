@@ -9,3 +9,8 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # Add .NET Core SDK tools
 export PATH="$PATH:/Users/dir/.dotnet/tools"
 
+
+# Setup asdf - see https://asdf-vm.com/guide/getting-started.html
+. /usr/local/opt/asdf/libexec/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+
