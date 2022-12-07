@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -9,7 +14,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster" 
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -119,6 +124,22 @@ alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l='lsd -la'
 alias mfa='source ~/bin/aws_helper.sh'
 
+
+alias p='pnpm'
+alias pin='pnpm install'
+alias prun='pnpm run'
+alias pd='pnpm run dev'
+alias pb='pnpm run build'
+alias psv='pnpm run serve'
+alias pst='pnpm start'
+alias pt='pnpm test'
+alias ptc='pnpm test --coverage'
+alias pln='pnpm run lint'
+alias pdocs='pnpm run docs'
+alias pex='pnpm exec'
+alias pdx='pnpm dlx'
+
+
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -133,3 +154,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
