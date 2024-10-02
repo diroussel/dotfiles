@@ -1,16 +1,28 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
-test -e "/usr/local/etc/profile.d/bash_completion.sh" && . "/usr/local/etc/profile.d/bash_completion.sh"
+if type brew &>/dev/null
+then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]
+  then
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  fi
+  for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*
+  do
+    [[ -r "${COMPLETION}" ]] && source "${COMPLETION}"
+  done
+fi
+
+
 test -e ~/.bashrc && source ~/.bashrc
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-# Add .NET Core SDK tools
-export PATH="$PATH:/Users/dir/.dotnet/tools"
 
 
 # Setup asdf - see https://asdf-vm.com/guide/getting-started.html
-. /usr/local/opt/asdf/libexec/asdf.sh
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
-
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash

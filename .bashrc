@@ -9,11 +9,10 @@ grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 
 
 export PATH="$PATH:$HOME/bin"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init bash)"
 
 # Install direnv hook to speed up asdf
 eval "$(asdf exec direnv hook bash)"
-

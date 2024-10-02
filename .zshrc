@@ -1,10 +1,12 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
 PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
+# Path to this current script
+SCRIPT_PATH="${0:A:h}"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -141,7 +143,7 @@ alias pdx='pnpm dlx'
 
 
 export PATH="$PATH:$HOME/bin"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
 
 autoload -U +X bashcompinit && bashcompinit
@@ -153,9 +155,11 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
 
+# Install iterm shell integration - see https://iterm2.com/documentation-shell-integration.html
+source $SCRIPT_PATH/iterm/iterm2_shell_integration.zsh
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
-
