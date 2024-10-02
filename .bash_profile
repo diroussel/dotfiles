@@ -21,8 +21,3 @@ fi
 
 
 test -e ~/.bashrc && source ~/.bashrc
-
-
-# Setup asdf - see https://asdf-vm.com/guide/getting-started.html
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-. /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash

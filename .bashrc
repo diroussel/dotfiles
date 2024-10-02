@@ -17,5 +17,5 @@ eval "$(starship init bash)"
 # Install fzf (fuzzy find)
 source <(fzf --bash)
 
-# Install direnv hook to speed up asdf
-eval "$(asdf exec direnv hook bash)"
+# Install mise-en-place - see https://mise.jdx.dev/
+eval "$(mise activate bash)"

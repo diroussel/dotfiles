@@ -74,7 +74,6 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  asdf
   docker
   dotenv
   git
@@ -166,11 +165,7 @@ eval "$(starship init zsh)"
 # Install fzf (fuzzy find)
 source <(fzf --zsh)
 
-# Install iterm shell integration - see https://iterm2.com/documentation-shell-integration.html
-source $SCRIPT_PATH/iterm/iterm2_shell_integration.zsh
+# Install mise-en-place - see https://mise.jdx.dev/
+eval "$(mise activate zsh)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
