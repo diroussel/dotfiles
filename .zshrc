@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
 
 # Path to your oh-my-zsh installation.
@@ -148,7 +148,7 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C $HOME/bin/vault vault
 
 # Syntax highlighting as commands are entered
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
