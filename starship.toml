@@ -84,6 +84,12 @@ disabled = false
 [nim]
 disabled = true
 
+[nodejs]
+disabled = true
+
+[ruby]
+disabled = true
+
 [env_var]
 variable = "MFA_PROMPT_INFO"
 default = ""
