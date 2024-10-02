@@ -149,11 +149,22 @@ export PATH="$PATH:$HOME/.cargo/bin"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C $HOME/bin/vault vault
 
+# from: brew info zsh-completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # Syntax highlighting as commands are entered
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
+
+# Install fzf (fuzzy find)
+source <(fzf --zsh)
 
 # Install iterm shell integration - see https://iterm2.com/documentation-shell-integration.html
 source $SCRIPT_PATH/iterm/iterm2_shell_integration.zsh

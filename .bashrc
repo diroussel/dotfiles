@@ -14,5 +14,8 @@ export PATH="/opt/homebrew/sbin:$PATH"
 # Install starship prompt - https://starship.rs/
 eval "$(starship init bash)"
 
+# Install fzf (fuzzy find)
+source <(fzf --bash)
+
 # Install direnv hook to speed up asdf
 eval "$(asdf exec direnv hook bash)"
