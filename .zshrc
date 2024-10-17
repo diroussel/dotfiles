@@ -156,6 +156,12 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+include () {
+    [[ -f "$1" ]] && source "$1"
+}
+
+include ~/.config/project-vars.sh
+
 # Syntax highlighting as commands are entered
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

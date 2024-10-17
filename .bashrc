@@ -11,6 +11,13 @@ grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 export PATH="$PATH:$HOME/bin"
 export PATH="/opt/homebrew/sbin:$PATH"
 
+# Read any extra vars, or secrets from project-vars.sh
+include () {
+    [[ -f "$1" ]] && source "$1"
+}
+
+include ~/.config/project-vars.sh
+
 # Install starship prompt - https://starship.rs/
 eval "$(starship init bash)"
 
