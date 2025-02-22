@@ -1,10 +1,29 @@
+tap "adoptopenjdk/openjdk"
+tap "cjbassi/gotop"
 tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "mongodb/brew"
+# Search tool like grep, but optimized for programmers
+brew "ack"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
-# Extremely Fast Compression algorithm
-brew "lz4"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Java build tool
+brew "ant"
+# Engine for large-scale data processing
+brew "apache-spark"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 4.2+
@@ -13,26 +32,24 @@ brew "bash-completion@2"
 brew "bat"
 # Statistics utility to count lines of code
 brew "cloc"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Generic machine emulator and virtualizer
-brew "qemu"
-# Linux virtual machines
-brew "lima"
-# Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima"
+# Configurable talking characters in ASCII art
+brew "cowsay"
 # Diff that understands syntax
 brew "difftastic"
 # Tool for exploring each layer in a docker image
 brew "dive"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
 # Embeddable SQL OLAP Database Management System
 brew "duckdb"
 # Command-line tool to interact with exercism.io
 brew "exercism"
+# ISO AAC audio encoder
+brew "faac"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Foreman in Go for Procfile-based application management
@@ -75,32 +92,40 @@ brew "htop"
 brew "httpie"
 # Command-line benchmarking tool
 brew "hyperfine"
+# Static analyzer for Java, C, C++, and Objective-C
+brew "infer"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Handy way to save and run project-specific commands
-brew "just"
-# Modern load testing tool, using Go and JavaScript
-brew "k6"
+# Run local Kubernetes cluster in Docker
+brew "kind"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Rainbows and unicorns in your console!
 brew "lolcat"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
+# Java-based project management
+brew "maven"
+# Show markdown documents on text terminals
+brew "mdcat"
 # Modern and intuitive terminal-based text editor
 brew "micro"
+# Modern JVM-based framework for building modular microservices
+brew "micronaut"
 # Terminal-based visual file manager
 brew "midnight-commander"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
-# Simple tool to make locally trusted development certificates
-brew "mkcert"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# DNS benchmark utility
+brew "namebench"
 # NCurses Disk Usage
 brew "ncdu"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Fast, highly customisable system info script
+brew "neofetch"
 # POSIX *nix fetch script using Nerdfonts
 brew "nerdfetch"
 # Command-line Git information tool
@@ -111,16 +136,18 @@ brew "p7zip"
 brew "pgcli"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Object-relational database system
+brew "postgresql"
+# Python version management
+brew "pyenv"
 # File browser
 brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# 7-Zip is a file archiver with a high compression ratio
-brew "sevenzip"
+# Proxy server that works as a poor man's VPN
+brew "sshuttle"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Tool to generate documentation from Terraform modules
-brew "terraform-docs"
 # Text interface for Git repositories
 brew "tig"
 # Terminal multiplexer
@@ -141,12 +168,18 @@ brew "zsh"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# A terminal based graphical activity monitor inspired by gtop and vtop
+brew "cjbassi/gotop/gotop"
+# JDK from the Java User Group (JUG)
+cask "adoptopenjdk"
+# AdoptOpenJDK OpenJDK (Java) Development Kit
+cask "adoptopenjdk11"
+# AdoptOpenJDK OpenJDK (Java) Development Kit
+cask "adoptopenjdk8"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
-# Virtual monitor for screen sharing
-cask "deskpad"
 cask "font-fantasque-sans-mono"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"

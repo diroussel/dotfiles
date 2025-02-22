@@ -1,9 +1,14 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+export PATH
+PATH="$HOME/bin:$PATH"
+PATH="/opt/homebrew/sbin:$PATH"
+PATH="/opt/homebrew/bin:$PATH"
+PATH="/usr/local/bin:$PATH"
 PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
+PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Path to this current script
 SCRIPT_PATH="${0:A:h}"
@@ -55,7 +60,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -83,6 +88,7 @@ plugins=(
   kubectl
   macos
   mvn
+  pnpm
   rake
   rust
   yarn
@@ -166,7 +172,7 @@ include () {
 include ~/.config/project-vars.sh
 
 # Syntax highlighting as commands are entered
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Install starship prompt - https://starship.rs/
 eval "$(starship init zsh)"
