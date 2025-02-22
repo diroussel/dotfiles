@@ -21,6 +21,7 @@ ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.bashrc .bashrc
 ln -s .dotfiles/.bash_profile .bash_profile
 ln -s .dotfiles/starship.toml ~/.config/starship.toml
+ln -s .dotfiles/.hyper.js .hyper.js
 
 # Use mise-en-place instead of ASDF
 ln -s ~/.local/share/mise ~/.asdf
