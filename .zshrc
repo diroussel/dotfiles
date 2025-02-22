@@ -75,10 +75,12 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   docker
+  docker-compose
   dotenv
   git
   gradle
   httpie
+  kubectl
   macos
   mvn
   rake
@@ -156,6 +158,7 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# Read any extra vars, or secrets from project-vars.sh
 include () {
     [[ -f "$1" ]] && source "$1"
 }
