@@ -175,6 +175,6 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 
 # Install mise-en-place - see https://mise.jdx.dev/
-eval "$(mise activate zsh)"
+eval "$(mise activate zsh --shims)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
