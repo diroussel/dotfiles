@@ -134,6 +134,10 @@ alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l='lsd -la'
 alias mfa='source ~/bin/aws_helper.sh'
+alias ks="kubectl config get-contexts -o name | fzf --height=10 | xargs kubectl config use-context"
+
+alias bstack='f() { git reflog | grep checkout | cut -d " " -f 8 | uniq | head ${1} | cat -n };f'
+alias bjmp='fn() { bstack ${1} | tail -1 | cut -f 2 | xargs git checkout  }; fn'
 
 
 alias p='pnpm'
