@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH
+PATH="$HOME/.local/share/mise/shims:$PATH"
 PATH="$HOME/bin:$PATH"
 PATH="/opt/homebrew/sbin:$PATH"
 PATH="/opt/homebrew/bin:$PATH"
@@ -8,6 +9,7 @@ PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
+PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Path to this current script
