@@ -46,6 +46,8 @@ sudo systemsetup -settimezone "Europe/London" > /dev/null
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Display the Cmd-Tab app-switcher on all monitors, the default often gets it wrong
+defaults write com.apple.dock appswitcher-all-displays -bool true
 
 ###############################################################################
 # Finder                                                                      #
